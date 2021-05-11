@@ -1,14 +1,15 @@
 <!DOCTYPE html><html lang="en">
 
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/matter.js"></script>
     <script src="libraries/p5.play.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -16,16 +17,18 @@
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyCIielmq6kkU6NYB0TtICfR5xd5AEEUGOw",
-    authDomain: "fruit-catcher-1b391.firebaseapp.com",
-    projectId: "fruit-catcher-1b391",
-    storageBucket: "fruit-catcher-1b391.appspot.com",
-    messagingSenderId: "269699634034",
-    appId: "1:269699634034:web:aa39d78f23bca6d80403eb"
+    apiKey: "AIzaSyBaJOOWFoYtgw-FNu_gFogJs9SJKKh-l8Y",
+    authDomain: "fruit-catcher-debugger-1.firebaseapp.com",
+    databaseURL: "https://fruit-catcher-debugger-1-default-rtdb.firebaseio.com",
+    projectId: "fruit-catcher-debugger-1",
+    storageBucket: "fruit-catcher-debugger-1.appspot.com",
+    messagingSenderId: "164386647000",
+    appId: "1:164386647000:web:d2ebe723b3277d8978e0ad"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+
 
     <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
